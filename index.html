@@ -14,41 +14,75 @@
 
     nav {
       background: #111;
-      color: white;
-      padding: 15px;
+      padding: 16px;
       text-align: center;
+      position: sticky;
+      top: 0;
     }
 
     nav a {
       color: white;
       margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
     }
 
     header {
-      padding: 60px 20px;
-      text-align: center;
       background: white;
+      text-align: center;
+      padding: 70px 20px;
+      border-bottom: 4px solid #b00020;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      color: #555;
     }
 
     section {
-      padding: 40px 20px;
       max-width: 900px;
-      margin: auto;
+      margin: 30px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #b00020;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 8px;
     }
 
     .project {
-      background: white;
-      padding: 20px;
+      background: #f9f9f9;
+      padding: 18px;
       margin: 15px 0;
-      border-radius: 10px;
+      border-left: 5px solid #b00020;
+      border-radius: 8px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #111;
+      color: white;
+      padding: 8px 12px;
+      margin: 6px;
+      border-radius: 20px;
+      font-size: 14px;
     }
 
     footer {
+      text-align: center;
       background: #111;
       color: white;
-      text-align: center;
-      padding: 20px;
+      padding: 25px;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -57,45 +91,70 @@
 
   <nav>
     <a href="#about">Über mich</a>
+    <a href="#skills">Kenntnisse</a>
     <a href="#projects">Projekte</a>
     <a href="#contact">Kontakt</a>
   </nav>
 
   <header>
     <h1>Salmo Aldiab</h1>
-    <p>Angehender IT-Auszubildender | Interesse an Webentwicklung und Systemintegration</p>
+    <p>Angehender IT-Auszubildender | Schwerpunkt Webentwicklung</p>
   </header>
 
   <section id="about">
     <h2>Über mich</h2>
     <p>
-      Ich interessiere mich sehr für IT, Computer und Technik.
-      Zurzeit lerne ich die Grundlagen von HTML, CSS und Webentwicklung.
-      Mein Ziel ist eine Ausbildung im IT-Bereich.
+      Ich interessiere mich sehr für IT, Computer und moderne Technologien.
+      Besonders begeistert mich die Webentwicklung, da ich gerne eigene Ideen praktisch umsetze
+      und Schritt für Schritt neue Fähigkeiten aufbaue.
     </p>
+    <p>
+      Aktuell lerne ich selbstständig die Grundlagen von HTML, CSS und Webdesign.
+      Mir ist wichtig, nicht nur fertige Lösungen zu nutzen, sondern zu verstehen,
+      wie Webseiten aufgebaut sind und wie man technische Probleme löst.
+    </p>
+    <p>
+      Mein Ziel ist es, eine Ausbildung im IT-Bereich zu beginnen und mich langfristig
+      in der Webentwicklung weiterzuentwickeln.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Kenntnisse</h2>
+    <div class="skills">
+      <span>HTML Grundlagen</span>
+      <span>CSS Grundlagen</span>
+      <span>Webdesign</span>
+      <span>Computer & Technik</span>
+      <span>Selbstständiges Lernen</span>
+      <span>Problemlösung</span>
+    </div>
   </section>
 
   <section id="projects">
     <h2>Meine Projekte</h2>
 
     <div class="project">
-      <h3>Projekt 1: Persönliche Portfolio-Webseite</h3>
+      <h3>Portfolio-Webseite</h3>
       <p>
-        Diese Webseite ist mein erstes eigenes Portfolio-Projekt mit HTML und CSS.
+        Diese Webseite ist mein erstes eigenes Portfolio-Projekt. Dabei habe ich gelernt,
+        wie man Inhalte mit HTML strukturiert und mit CSS optisch gestaltet.
       </p>
     </div>
 
     <div class="project">
-      <h3>Projekt 2: Kommt bald</h3>
+      <h3>Nächste Schritte</h3>
       <p>
-        Hier werde ich weitere Projekte hinzufügen, sobald ich mehr gelernt habe.
+        Als Nächstes möchte ich weitere kleine Webseiten erstellen und meine Kenntnisse
+        in CSS und JavaScript verbessern.
       </p>
     </div>
   </section>
 
   <section id="contact">
     <h2>Kontakt</h2>
-    <p>E-Mail: salmoaldeab@gmail.com</p>
+    <p>📧 E-Mail: salmoaldeab@gmail.com</p>
+    <p>📞 Telefon: 017634526090</p>
   </section>
 
   <footer>
